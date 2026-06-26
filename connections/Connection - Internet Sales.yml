@@ -2,5 +2,5 @@ unique_name: Connection - Internet Sales
 label: Connection - Internet Sales
 object_type: connection
 as_connection: BigQuery
-database: atscale-tutorial-data
+database: atscale-sales-demo
 schema: as_adventure
