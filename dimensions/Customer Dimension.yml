@@ -2,91 +2,85 @@ unique_name: Customer Dimension
 object_type: dimension
 label: Customer Dimension
 description: Customer Key
-type: standard
-
 hierarchies:
-
   - unique_name: Customer Hierarchy
     label: Customer Hierarchy
-    description: "Customer rollup with the individual customer (full name) at the leaf; carries first name, last name, and occupation attributes."
+    description: >-
+      Customer rollup with the individual customer (full name) at the leaf;
+      carries first name, last name, and occupation attributes.
     folder: Customer Attributes
-
     levels:
-
       - unique_name: Customer Name
-
         secondary_attributes:
-
           - unique_name: d_firstname
             label: First Name
-            description: "Customer first name / given name. Customer attribute; contrast Last Name."
+            description: >-
+              Customer first name / given name. Customer attribute; contrast
+              Last Name.
             dataset: dimcustomer
-            name_column: firstname
             key_columns:
               - firstname
-
+            name_column: firstname
           - unique_name: d_lastname
             label: Last Name
-            description: "Customer last name / family name / surname. Customer attribute; contrast First Name."
+            description: >-
+              Customer last name / family name / surname. Customer attribute;
+              contrast First Name.
             dataset: dimcustomer
-            name_column: lastname
             key_columns:
               - lastname
-
+            name_column: lastname
           - unique_name: Occupation
             label: Occupation
-            description: "Customer occupation / profession / job category (e.g. Professional, Skilled Manual, Management)."
-            folder: Customer Attributes
+            description: >-
+              Customer occupation / profession / job category (e.g.
+              Professional, Skilled Manual, Management).
             dataset: dimcustomer
-            name_column: occupation
+            folder: Customer Attributes
             key_columns:
               - occupation
-
+            name_column: occupation
 level_attributes:
-
   - unique_name: Customer Name
     label: Customer Name
     description: Customer Key
-    is_unique_key: true
     dataset: dimcustomer
-    name_column: fullname
+    is_unique_key: true
     key_columns:
       - customerkey
-
+    name_column: fullname
 relationships:
-
   - unique_name: CustomerDimension_GeographyDimension
     from:
-      hierarchy: Customer Hierarchy
-      level: Customer Name
       dataset: dimcustomer
+      hierarchy: Customer Hierarchy
       join_columns:
         - geographykey
+      level: Customer Name
     to:
       dimension: Geography Dimension
       level: Zip Key
     type: embedded
-
   - unique_name: CustomerDimension_GenderDimension
     from:
-      hierarchy: Customer Hierarchy
-      level: Customer Name
       dataset: dimcustomer
+      hierarchy: Customer Hierarchy
       join_columns:
         - gender
+      level: Customer Name
     to:
       dimension: Gender Dimension
       level: Gender
     type: embedded
-
   - unique_name: CustomerDimension_GeographyDimension_1
     from:
-      hierarchy: Customer Hierarchy
-      level: Customer Name
       dataset: dimcustomer
+      hierarchy: Customer Hierarchy
       join_columns:
         - geographykey
+      level: Customer Name
     to:
       dimension: Geography Dimension
       level: City Key
     type: embedded
+type: standard

@@ -1,0 +1,10 @@
+unique_name: country_security_map_users
+object_type: dataset
+label: country_security_map_users
+columns:
+  - name: country
+    data_type: string
+  - name: username
+    data_type: string
+connection_id: Connection - Internet Sales
+table: country_security_map_users

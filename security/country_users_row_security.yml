@@ -1,0 +1,10 @@
+unique_name: country_users_row_security
+object_type: row_security
+label: country_users_row_security
+dataset: country_security_map_users
+filter_key_column: country
+id_type: user
+ids_column: username
+scope: all
+secure_totals: false
+use_filter_key: true
