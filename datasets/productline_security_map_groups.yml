@@ -1,0 +1,10 @@
+unique_name: productline_security_map_groups
+object_type: dataset
+label: productline_security_map_groups
+columns:
+  - name: productline
+    data_type: string
+  - name: group_name
+    data_type: string
+connection_id: Connection - Internet Sales
+table: productline_security_map_groups

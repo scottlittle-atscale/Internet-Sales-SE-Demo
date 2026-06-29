@@ -1,0 +1,10 @@
+unique_name: productline_groups_row_security
+object_type: row_security
+label: productline_groups_row_security
+dataset: productline_security_map_groups
+filter_key_column: productline
+id_type: group
+ids_column: group_name
+scope: all
+secure_totals: false
+use_filter_key: true
