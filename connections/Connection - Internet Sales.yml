@@ -3,4 +3,4 @@ label: Connection - Internet Sales
 object_type: connection
 as_connection: BigQuery
 database: atscale-sales-demo
-schema: as_adventure
+schema: as_adventure_SE_demo2
