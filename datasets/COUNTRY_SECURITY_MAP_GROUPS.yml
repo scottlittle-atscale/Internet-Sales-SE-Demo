@@ -1,0 +1,10 @@
+unique_name: COUNTRY_SECURITY_MAP_GROUPS
+object_type: dataset
+label: COUNTRY_SECURITY_MAP_GROUPS
+columns:
+  - name: COUNTRY
+    data_type: string
+  - name: GROUP_NAME
+    data_type: string
+connection_id: Connection - Internet Sales
+table: COUNTRY_SECURITY_MAP_GROUPS

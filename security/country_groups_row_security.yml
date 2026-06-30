@@ -1,0 +1,10 @@
+unique_name: country_groups_row_security
+object_type: row_security
+label: country_groups_row_security
+dataset: COUNTRY_SECURITY_MAP_GROUPS
+filter_key_column: COUNTRY
+id_type: group
+ids_column: GROUP_NAME
+scope: all
+secure_totals: false
+use_filter_key: true

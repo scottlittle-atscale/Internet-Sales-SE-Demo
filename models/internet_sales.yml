@@ -216,9 +216,9 @@ perspectives:
   - unique_name: internet_sales_no_pii
     dimensions:
       - hierarchies:
-          - levels:
-              - Customer Name
-            name: Customer Hierarchy
+          - name: Customer Hierarchy
+            level: Customer Name
+            
         name: Customer Dimension
         secondaryattributes:
           - d_firstname
