@@ -3,7 +3,7 @@ object_type: dataset
 label: dimgender
 description: "Gender lookup table: gender key and gender name."
 connection_id: Connection - Internet Sales
-table: dimgender
+table: DIMGENDER
 
 columns:
   - name: genderkey

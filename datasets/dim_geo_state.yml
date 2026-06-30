@@ -3,7 +3,7 @@ object_type: dataset
 label: dim_geo_state
 description: "Geography lookup at state grain: state key, state name, and country."
 connection_id: Connection - Internet Sales
-table: dim_geo_state
+table: DIM_GEO_STATE
 
 columns:
   - name: country

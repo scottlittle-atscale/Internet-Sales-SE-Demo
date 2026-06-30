@@ -3,4 +3,4 @@ label: Connection - Internet Sales
 object_type: connection
 as_connection: SnowflakePartner
 database: SE_DEMO_LIBRARY
-schema: AS_ADVENTURE
+schema: AS_ADVENTURE_SE_DEMO2
