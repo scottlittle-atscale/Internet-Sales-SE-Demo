@@ -54,16 +54,6 @@ level_attributes:
       - productkey
     name_column: englishproductname
 relationships:
-  - unique_name: dimproduct_productline_to_productline_groups_row_security
-    from:
-      dataset: dimproduct
-      hierarchy: Product Dimension
-      join_columns:
-        - productline
-      level: Product Category
-    to:
-      row_security: productline_groups_row_security
-    type: embedded
   - unique_name: dimproduct_productline_to_productline_users_row_security
     from:
       dataset: dimproduct
