@@ -7,4 +7,4 @@ id_type: user
 ids_column: username
 scope: all
 secure_totals: false
-use_filter_key: true
+use_filter_key: false
