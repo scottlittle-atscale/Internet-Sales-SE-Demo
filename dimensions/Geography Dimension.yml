@@ -145,14 +145,4 @@ relationships:
     to:
       level: Country
     type: snowflake
-  - unique_name: dim_geo_country_country_to_country_groups_row_security
-    from:
-      dataset: dim_geo_country
-      hierarchy: Geography City
-      join_columns:
-        - country
-      level: Country
-    to:
-      row_security: country_groups_row_security
-    type: embedded
 type: standard
