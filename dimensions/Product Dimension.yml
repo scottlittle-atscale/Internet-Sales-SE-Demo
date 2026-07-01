@@ -57,7 +57,7 @@ relationships:
   - unique_name: dimproduct_productline_to_productline_groups_row_security
     from:
       dataset: dimproduct
-      hierarchy: Product Hierarchy
+      hierarchy: Product Dimension
       join_columns:
         - productline
       level: Product Category
