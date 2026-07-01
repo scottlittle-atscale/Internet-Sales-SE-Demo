@@ -64,14 +64,4 @@ relationships:
     to:
       row_security: productline_users_row_security
     type: embedded
-  - unique_name: dimproduct_productline_to_productline_groups_row_security
-    from:
-      dataset: dimproduct
-      hierarchy: Product Dimension
-      join_columns:
-        - productline
-      level: Product Category
-    to:
-      row_security: productline_groups_row_security
-    type: embedded
 type: standard
