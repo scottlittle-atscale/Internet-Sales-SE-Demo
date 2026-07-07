@@ -24,9 +24,9 @@ level_attributes:
       Parent level of Sales Reason.
     dataset: dimsalesreason
     key_columns:
-      - salesreasonreasongroup
-    name_column: salesreasonreasongroup
-    sort_column: salesreasonreasongroup
+      - salesreasongroup
+    name_column: salesreasongroup
+    sort_column: salesreasongroup
   - unique_name: Sales Reason
     label: Sales Reason
     description: >-
