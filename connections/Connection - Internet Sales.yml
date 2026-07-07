@@ -2,5 +2,5 @@ unique_name: Connection - Internet Sales
 label: Connection - Internet Sales
 object_type: connection
 as_connection: Databricks
-database: atscale_tutorial_data
-schema: as_adventure
+database: se_library
+schema: as_adventure_se_demo2
