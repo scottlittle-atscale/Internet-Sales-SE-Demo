@@ -10,5 +10,5 @@ columns:
     data_type: long
   - name: salesreasonname
     data_type: string
-  - name: salesreasonreasontype
+  - name: salesreasongroup
     data_type: string

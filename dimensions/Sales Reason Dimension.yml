@@ -24,10 +24,10 @@ level_attributes:
     label: Reason Type
     description: "Category / type of purchase reason (e.g. Marketing, Promotion, Other). Parent level of Sales Reason."
     dataset: dimsalesreason
-    name_column: salesreasonreasontype
+    name_column: salesreasongroup
     key_columns:
-      - salesreasonreasontype
-    sort_column: salesreasonreasontype
+      - salesreasongroup
+    sort_column: salesreasongroup
 
   - unique_name: Sales Reason
     label: Sales Reason
